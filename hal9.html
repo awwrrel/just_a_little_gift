@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hlloww</title>
+    <style>
+        body {
+            background: url('love.gif') no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .container {
+            background-color: white;
+            padding: 20px;
+            width: 80%;
+            max-width: 600px;
+            border-radius: 10px;
+            text-align: center;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        /* Animasi teks */
+        .text-container {
+            font-size: 30px;
+            font-weight: bold;
+            text-align: center;
+            width: 100%;
+            height: 50px;
+            overflow: hidden;
+            margin-top: 20px; /* Menambahkan jarak antara gambar dan teks */
+        }
+
+        .text-change {
+            display: flex;
+            flex-direction: column;
+            animation: changeText 8s infinite;
+            color: pink;
+        }
+
+        .text-change div {
+            padding: 10px 0;
+        }
+
+        @keyframes changeText {
+            0% { transform: translateY(0); }
+            25% { transform: translateY(-50px); }
+            50% { transform: translateY(-100px); }
+            75% { transform: translateY(-150px); }
+            100% { transform: translateY(0); }
+        }
+
+        /* Tampilan gambar */
+        img {
+            width: 150px;
+            height: auto;
+            margin: 20px 0;
+        }
+
+        /* Tombol */
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            margin: 0 10px;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        /* Watermark */
+        .watermark {
+            position: fixed;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 18px;
+            color: rgba(0, 0, 0, 0.3);
+            pointer-events: none;
+        }
+
+        /* Kotak musik */
+        .music-box {
+            width: 200px;
+            background-color: #f1f1f1;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: absolute;
+            bottom: 5px;
+        }
+
+        .music-box audio {
+            width: 100%;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+      <p> that u are good enough. u are worth it. u are loved, especially by meeeeeeeeeeee(๑•ᴗ•๑)♡.  </p>
+      <p> i'm so proud of u, browww!♡~
+u always try every day to get up and get things done. u've done so much, and u're always doing great!
+u deserve so much love, and u deserve the world.
+i know, deep down in ur heart, u're exhausted from keeping it all together, but u still act like u're strong enough to get through it :(
+     <p>well, i'm here now, and i will always pray for u.</p>
+one day, everything will get better, and u will be okay soon‼ 
+don't pressure urself, okay?
+bcs u have me now~ hihi
+and i'll always be by ur side.</p>
+      
+ <p>u're always gonna be loved by me, no matter what happens between us, i'll never ever gonna leave u.</p>
+
+          <p>i should say it more, but i really appreciate u and all that u do. i admire the man that u are (⁠´⁠ε⁠｀⁠ ⁠)</p>
+            <p>iloveeeeloveeeeyouuuusooomuchh, squal.</p>
+
+        <img src="cupid.gif" alt="Hello GIF">
+
+        <!-- Teks Animasi Pink di bawah gambar -->
+        <div class="text-container">
+            <div class="text-change">
+                <div>don't worry'</div>
+                <div>i will always</div>
+                <div>love u</div>
+                <div><3</div>
+            </div>
+        </div>
+
+        <div class="button-container">
+        </div>
+    </div>
+
+    <!-- Kotak musik -->
+    <div class="music-box">
+        <h3>seasons - wave to earth</h3>
+        <audio controls>
+            <source src="seasons.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+
+    <!-- Watermark -->
+    <div class="watermark">
+        by owrel
+    </div>
+
+</body>
+</html>
